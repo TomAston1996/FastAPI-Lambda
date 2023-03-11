@@ -7,9 +7,13 @@ from pydantic import BaseModel
 from typing import Optional, Literal
 from uuid import uuid4
 
+# AWS Lambda
+from mangum import Mangum
+
 ### uvicorn main:app --reload
 
 app = FastAPI()
+handler = Mangum(app) #this puts the app into an instance that lambda can unpack
 
 class Book(BaseModel): 
     name: str
