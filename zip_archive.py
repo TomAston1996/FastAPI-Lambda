@@ -7,6 +7,6 @@ if __name__ == '__main__':
 
     zip = zipfile.ZipFile(r'C:\Users\z0049ufx\SMO Software Projects\AMA Cloud\API\FastAPI Lambda\lambda_function.zip','a')
     zip.write(
-        r'C:\Users\z0049ufx\SMO Software Projects\AMA Cloud\API\FastAPI Lambda\main.py', 
-        os.path.basename(r'C:\Users\z0049ufx\SMO Software Projects\AMA Cloud\API\FastAPI Lambda\main.py'))
+        r'C:\Users\z0049ufx\SMO Software Projects\AMA Cloud\API\FastAPI Lambda\books.json', 
+        os.path.basename(r'C:\Users\z0049ufx\SMO Software Projects\AMA Cloud\API\FastAPI Lambda\books.json'))
     zip.close()
